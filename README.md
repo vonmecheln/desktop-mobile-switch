@@ -15,7 +15,7 @@ A HTML5 desktop/mobile switch CSS Only
 
 ## Use
 
-1. link [switch css](style.css) file
+1. link [switch css](switch.css) file
 ```html
 <link rel="stylesheet" href="switch.css">
 ```
