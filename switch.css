@@ -1,0 +1,68 @@
+/* GENERAL */
+@import url('https://fonts.googleapis.com/css?family=Material+Icons');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --switch-base-size: 1rem;
+}
+
+.material-icons {
+    font-size: var(--switch-base-size);
+}
+
+.switch {
+    position: relative;
+    width: calc(var(--switch-base-size) * 4.28);
+    display: flex;
+    margin: 10px 10px auto auto;
+    background-color: rgba(0, 0, 0, .1);
+    cursor: pointer;
+}
+
+.switch,
+.toggle {
+    height: calc(var(--switch-base-size) * 2);
+    border-radius: var(--switch-base-size);
+}
+
+.toggle {
+    width: 50%;
+    background-color: #fff;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, .15);
+    transition: transform .3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.names {
+    font-weight: bolder;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    user-select: none;
+    padding: calc(var(--switch-base-size) / 2) 0px;
+}
+
+.two {
+    opacity: .5;
+}
+
+[type="checkbox"] {
+    display: none;
+}
+
+[type="checkbox"]:checked+.switch .toggle {
+    transform: translateX(100%);
+}
+
+[type="checkbox"]:checked+.switch .two {
+    opacity: 1;
+}
+
+[type="checkbox"]:checked+.switch .one {
+    opacity: .5;
+}

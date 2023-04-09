@@ -1,0 +1,17 @@
+
+[type="checkbox"]:checked~.content {
+    flex-direction: column;
+}
+
+.content {
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.content>div {
+    height: 90px;
+    width: 90px;
+    border: 1px solid red;
+}
